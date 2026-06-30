@@ -1,0 +1,31 @@
+---
+import { supportAreas } from "../content/support";
+---
+
+<section class="section section-dark support" id="support">
+    <div class="container">
+        <div class="support-heading">
+            <p class="section-label">Areas of Support</p>
+            <h2 class="section-title support-title">
+                Thoughtful support for families, schools and organisations.
+            </h2>
+        </div>
+
+        <div class="support-grid">
+            {
+                supportAreas.map((area) => (
+                    <article class="support-card" tabindex="0">
+                        <div class="support-card-image" />
+
+                        <div class="support-card-content">
+                            <span>{area.tag}</span>
+                            <h3>{area.title}</h3>
+                            <p>{area.description}</p>
+                            <a href="#contact">Learn more →</a>
+                        </div>
+                    </article>
+                ))
+            }
+        </div>
+    </div>
+</section>
