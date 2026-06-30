@@ -1,0 +1,33 @@
+:root {
+
+    /* Brand */
+
+    --navy: #0F2436;
+    --midnight: #152C42;
+    --velvet: #1B3A57;
+    --ocean: #2E5A76;
+
+    --cream: #F7F3EC;
+    --soft: #EFE7D9;
+
+    --gold: #C9A66B;
+    --gold-light: #D6B98A;
+
+    --sage: #93A8A5;
+
+    /* Text */
+
+    --text-dark: #243446;
+    --text-light: #FAF8F4;
+    --text-muted: #69727D;
+
+    /* Radius */
+
+    --radius: 18px;
+
+    /* Shadow */
+
+    --shadow-lg:
+        0 20px 60px rgba(15, 36, 54, .12);
+
+}
