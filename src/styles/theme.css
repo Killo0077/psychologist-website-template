@@ -124,72 +124,120 @@
 
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/* ---------- HEADER ---------- */
 
 .site-header {
-
     position: absolute;
-
     inset-inline: 0;
-
     top: 0;
-
     z-index: 100;
-
     padding: 2rem 0;
-
 }
 
 .header-content {
-
     display: flex;
-
-    justify-content: space-between;
-
     align-items: center;
-
+    justify-content: space-between;
 }
 
 .logo {
-
     display: flex;
-
     align-items: center;
-
     gap: 1rem;
-
 }
 
 .logo-mark {
-
     font-family: "Cormorant Garamond", serif;
-
-    font-size: 2rem;
-
+    font-size: 2.2rem;
+    line-height: 1;
     color: var(--gold);
-
 }
 
 .logo-text {
-
     display: flex;
-
     flex-direction: column;
-
+    line-height: 1.2;
 }
 
 .logo-text strong {
-
     color: var(--navy);
-
+    font-size: 0.95rem;
 }
 
 .logo-text span {
-
     color: var(--text-muted);
+    font-size: 0.78rem;
+}
 
-    font-size: .85rem;
 
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 5rem;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(46, 90, 118, 0.18), transparent 34%),
+        linear-gradient(135deg, var(--cream), var(--soft));
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.display-title span {
+    display: block;
+    color: var(--gold);
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 620px;
+    margin-top: 1.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-orb {
+    width: min(420px, 80vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 166, 107, 0.45);
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(circle, rgba(147, 168, 165, 0.2), transparent 62%),
+        rgba(255, 255, 255, 0.18);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-orb span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(6rem, 18vw, 12rem);
+    color: var(--gold);
+    letter-spacing: -0.12em;
+}
+
+@media (min-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr 0.8fr;
+    }
 }

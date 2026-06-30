@@ -1,15 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { site } from "../content/site";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout>
+	<Header />
+
 	<main>
-		<section class="container" style="padding: 8rem 0;">
-			<p>{site.brand.profession}</p>
-			<h1>{site.hero.title}</h1>
-			<h2>{site.hero.emphasis}</h2>
-			<p>{site.hero.description}</p>
-		</section>
+		<Hero />
 	</main>
 </BaseLayout>

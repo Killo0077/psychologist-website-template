@@ -1,0 +1,36 @@
+---
+import { site } from "../content/site";
+---
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <p class="section-label">{site.brand.profession}</p>
+
+            <h1 class="display-title">
+                {site.hero.title}
+                <span>{site.hero.emphasis}</span>
+            </h1>
+
+            <p class="body-large hero-description">
+                {site.hero.description}
+            </p>
+
+            <div class="hero-actions">
+                <a href="#contact" class="primary-button">
+                    {site.hero.primaryButton}
+                </a>
+
+                <a href="#about" class="secondary-button">
+                    {site.hero.secondaryButton}
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <div class="hero-orb">
+                <span>{site.brand.initials}</span>
+            </div>
+        </div>
+    </div>
+</section>
