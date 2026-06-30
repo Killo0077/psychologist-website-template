@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import { site } from "../content/site";
+import brain from "../assets/images/logo.png";
 ---
 
 <section class="section section-light about">
-    <div class="container about-grid">
+    <div class="container section-grid">
         <div class="about-content">
             <p class="section-label">
                 {site.about.label}
@@ -21,8 +23,12 @@ import { site } from "../content/site";
         </div>
 
         <div class="about-image">
-            <div class="portrait-placeholder">
-                {site.brand.initials}
+            <div class="about-image">
+                <Image
+                    src={brain}
+                    alt="Psychology illustration"
+                    class="about-brain"
+                />
             </div>
         </div>
     </div>
