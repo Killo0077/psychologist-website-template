@@ -1,9 +1,6 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
-
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://Killo0077.github.io",
+  site: "https://killo0077.github.io",
   base: "/psychologist-website-template/",
 });
