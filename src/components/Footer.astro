@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/images/footer logo.png";
+import { site } from "../content/site";
+---
+
+<footer class="footer" id="contact">
+    <div class="container footer-grid">
+        <div>
+            <Image src={logo} alt="Victoria Howson" class="footer-logo-image" />
+        </div>
+
+        <div class="footer-contact">
+            <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+            <a href={`tel:${site.contact.phone}`}>{site.contact.phone}</a>
+            <span>{site.contact.location}</span>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 {site.brand.name}. All rights reserved.</p>
+    </div>
+</footer>
