@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { supportAreas } from "../content/support";
 ---
 
@@ -6,6 +7,7 @@ import { supportAreas } from "../content/support";
     <div class="container">
         <div class="support-heading">
             <p class="section-label">Areas of Support</p>
+
             <h2 class="section-title support-title">
                 Thoughtful support for families, schools and organisations.
             </h2>
@@ -15,12 +17,21 @@ import { supportAreas } from "../content/support";
             {
                 supportAreas.map((area) => (
                     <article class="support-card" tabindex="0">
-                        <div class="support-card-image" />
+                        <div class="support-card-image">
+                            <Image
+                                src={area.image}
+                                alt={area.title}
+                                class="support-image"
+                            />
+                        </div>
 
                         <div class="support-card-content">
                             <span>{area.tag}</span>
+
                             <h3>{area.title}</h3>
+
                             <p>{area.description}</p>
+
                             <a href="#contact">Learn more →</a>
                         </div>
                     </article>

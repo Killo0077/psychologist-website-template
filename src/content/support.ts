@@ -1,20 +1,24 @@
+import family from "../assets/images/family.png";
+import school from "../assets/images/school.png";
+import organizations from "../assets/images/organizations.png";
+
 export const supportAreas = [
     {
-        title: "Families",
-        description:
-            "Support for children, adolescents and parents navigating emotional wellbeing, anxiety, behaviour and family relationships.",
-        tag: "Family support",
+        tag: "Families",
+        title: "Family Support",
+        description: "...",
+        image: family,
     },
     {
-        title: "Schools",
-        description:
-            "Collaborative psychological support for schools, helping create inclusive, emotionally aware learning environments.",
-        tag: "Educational support",
+        tag: "Schools",
+        title: "School Support",
+        description: "...",
+        image: school,
     },
     {
-        title: "Organisations",
-        description:
-            "Consultation, wellbeing programmes and professional guidance for teams, organisations and communities.",
-        tag: "Professional support",
+        tag: "Organisations",
+        title: "Organisation Support",
+        description: "...",
+        image: organizations,
     },
 ];
