@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import organisations from "../assets/images/organizations.png";
+---
+
+<section class="detail-section detail-light" id="organisations">
+    <div class="container detail-grid">
+        <div class="detail-text">
+            <p class="section-label">Organisation Support</p>
+
+            <h2 class="section-title">
+                Psychological support that strengthens people and workplaces.
+            </h2>
+
+            <p>
+                Victoria partners with organisations to improve psychological
+                wellbeing, resilience and healthy workplace cultures through
+                consultation, supervision and professional development.
+            </p>
+
+            <p>
+                Every organisation is unique, so support is tailored to the
+                needs of leaders, teams and the people they work alongside.
+            </p>
+        </div>
+
+        <div class="detail-image">
+            <Image
+                src={organisations}
+                alt="Organisation support illustration"
+            />
+        </div>
+    </div>
+</section>

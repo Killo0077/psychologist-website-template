@@ -160,9 +160,7 @@
     color: var(--gold);
 }
 
-.logo-text strong {
-    color: var(--text-light);
-}
+
 
 .logo-text strong {
     color: var(--navy);
@@ -230,10 +228,7 @@
     margin-top: 2.5rem;
 }
 
-.hero-visual {
-    display: flex;
-    justify-content: center;
-}
+
 
 .hero-visual {
     display: flex;
@@ -281,10 +276,11 @@
 
 .about {
     background:
-        radial-gradient(ellipse at top,
-            rgba(255, 255, 255, 0.7),
-            transparent 55%),
-        var(--cream);
+        linear-gradient(to bottom,
+            var(--navy) 0%,
+            var(--midnight) 6%,
+            var(--mist) 22%,
+            var(--mist) 100%);
 }
 
 .about-content {
@@ -297,40 +293,22 @@
     line-height: 1.8;
 }
 
-.about-image {
-    display: flex;
-    justify-content: flex-end;
-}
 
 
 
-.about-image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
 
-.about-brain {
-    width: 420px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: start;
-}
 
 
 /* ---------- SUPPORT AREAS ---------- */
 
 .support {
     background:
-        radial-gradient(circle at 20% 20%, rgba(201, 166, 107, .08), transparent 35%),
-        linear-gradient(135deg, var(--midnight), var(--navy));
+        linear-gradient(to bottom,
+            var(--mist) 0%,
+            rgba(21, 44, 66, 0.92) 18%,
+            var(--midnight) 36%,
+            var(--navy) 100%);
 }
 
 .support-heading {
@@ -444,13 +422,129 @@
     }
 }
 
+/* ---------- DETAIL SECTIONS ---------- */
+
+/* ---------- DETAIL SECTIONS ---------- */
+
+.detail-section {
+    padding: 9rem 0;
+    background: var(--cream);
+}
+
+.detail-section+.detail-section {
+    border-top: 1px solid rgba(201, 166, 107, 0.12);
+}
+
+.detail-light,
+.detail-dark {
+    background: var(--cream);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.detail-text {
+    max-width: 560px;
+}
+
+.detail-text p {
+    margin-top: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.detail-image {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-image img {
+    width: min(500px, 100%);
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- ABOUT ---------- */
+
+.about-text-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.about-intro {
+    max-width: 560px;
+}
+
+.about-copy {
+    max-width: 620px;
+}
+
+.about-copy p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+    .about-text-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+
+/* ---------- DETAIL LAYOUT ---------- */
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.detail-image {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-image img {
+    width: min(500px, 100%);
+    height: auto;
+    display: block;
+}
+
+.detail-text {
+    max-width: 560px;
+}
+
+
 
 /* ---------- FOOTER ---------- */
 
 .footer {
-    padding: 5rem 0 2rem;
-    background: var(--navy);
-    border-top: 1px solid rgba(201, 166, 107, .25);
+    padding: 8rem 0 2rem;
+
+    background:
+        linear-gradient(to bottom,
+            var(--cream) 0%,
+            rgba(245, 241, 234, 0.25) 18%,
+            var(--midnight) 38%,
+            var(--navy) 100%);
+
+    border-top: none;
 }
 
 .footer-grid {
@@ -503,52 +597,4 @@
     .footer-contact {
         text-align: left;
     }
-}
-
-/* ---------- SECTION TRANSITIONS ---------- */
-
-.hero,
-.about,
-.support,
-.footer {
-    position: relative;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 120px;
-    background: linear-gradient(to bottom,
-            rgba(15, 36, 54, 0),
-            var(--cream));
-    pointer-events: none;
-}
-
-.about::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 120px;
-    background: linear-gradient(to bottom,
-            rgba(247, 243, 236, 0),
-            var(--midnight));
-    pointer-events: none;
-}
-
-.support::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 100px;
-    background: linear-gradient(to bottom,
-            rgba(15, 36, 54, 0),
-            var(--navy));
-    pointer-events: none;
 }

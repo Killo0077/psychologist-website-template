@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import family from "../assets/images/family.png";
+---
+
+<section class="detail-section detail-light" id="family">
+    <div class="container detail-grid">
+        <div class="detail-text">
+            <p class="section-label">Family Support</p>
+
+            <h2 class="section-title">
+                Support for children, adolescents and families.
+            </h2>
+
+            <p>
+                Compassionate psychological support for families navigating
+                anxiety, emotional regulation, behavioural challenges and life
+                transitions.
+            </p>
+
+            <p>
+                Victoria works alongside families to create a calm, supportive
+                space where children and young people can feel understood and
+                supported.
+            </p>
+        </div>
+
+        <div class="detail-image">
+            <Image src={family} alt="Family support illustration" />
+        </div>
+    </div>
+</section>

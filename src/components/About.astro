@@ -1,4 +1,8 @@
 ---
+import { site } from "../content/site";
+---
+
+<!-- ---
 import { Image } from "astro:assets";
 import { site } from "../content/site";
 import brain from "../assets/images/logo.png";
@@ -30,6 +34,29 @@ import brain from "../assets/images/logo.png";
                     class="about-brain"
                 />
             </div>
+        </div>
+    </div>
+</section> -->
+<section class="section section-light about" id="about">
+    <div class="container about-text-grid">
+        <div class="about-intro">
+            <p class="section-label">{site.about.label}</p>
+
+            <h2 class="section-title">
+                {site.about.title}
+            </h2>
+        </div>
+
+        <div class="about-copy">
+            <p>{site.about.description}</p>
+
+            <p>{site.about.secondParagraph}</p>
+
+            <p>
+                Each session is shaped around the individual needs of the
+                person, creating a thoughtful space for reflection, emotional
+                growth and practical change.
+            </p>
         </div>
     </div>
 </section>
