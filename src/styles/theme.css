@@ -31,3 +31,95 @@
         0 20px 60px rgba(15, 36, 54, .12);
 
 }
+
+/* ---------- TYPOGRAPHY ---------- */
+
+.display-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--navy);
+}
+
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--navy);
+}
+
+.section-label {
+    font-size: .85rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+.body-large {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: var(--text-muted);
+}
+
+.body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+/* ---------- BUTTONS ---------- */
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 2rem;
+
+    border-radius: 999px;
+
+    background: var(--sage);
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: .35s ease;
+}
+
+.primary-button:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(.95);
+
+}
+
+.secondary-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 1rem 2rem;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    transition: .35s;
+
+}
+
+.secondary-button:hover {
+
+    background: rgba(201, 166, 107, .08);
+
+}
