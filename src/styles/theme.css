@@ -153,10 +153,8 @@
     color: var(--gold);
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
+.logo-text strong {
+    color: var(--text-light);
 }
 
 .logo-text strong {
@@ -165,8 +163,7 @@
 }
 
 .logo-text span {
-    color: var(--text-muted);
-    font-size: 0.78rem;
+    color: rgba(250, 248, 244, 0.65);
 }
 
 
@@ -176,10 +173,25 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 8rem 0 5rem;
+    justify-content: center;
+    padding: 2rem 0;
+
     background:
-        radial-gradient(circle at 80% 30%, rgba(46, 90, 118, 0.18), transparent 34%),
-        linear-gradient(135deg, var(--cream), var(--soft));
+        radial-gradient(circle at 78% 32%, rgba(201, 166, 107, 0.08), transparent 32%),
+        radial-gradient(circle at 18% 75%, rgba(46, 90, 118, 0.45), transparent 38%),
+        linear-gradient(135deg, var(--navy), var(--midnight));
+}
+
+.hero .display-title {
+    color: var(--text-light);
+}
+
+.hero .body-large {
+    color: rgba(250, 248, 244, 0.72);
+}
+
+.hero .section-label {
+    color: var(--gold);
 }
 
 .hero-grid {
@@ -216,7 +228,7 @@
     justify-content: center;
 }
 
-.hero-orb {
+.hero-artwork {
     width: min(420px, 80vw);
     aspect-ratio: 1;
     border-radius: 50%;
@@ -224,12 +236,12 @@
     display: grid;
     place-items: center;
     background:
-        radial-gradient(circle, rgba(147, 168, 165, 0.2), transparent 62%),
-        rgba(255, 255, 255, 0.18);
-    box-shadow: var(--shadow-lg);
+        radial-gradient(circle, rgba(147, 168, 165, 0.12), transparent 62%),
+        rgba(255, 255, 255, 0.04);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.25);
 }
 
-.hero-orb span {
+.hero-artwork span {
     font-family: "Cormorant Garamond", serif;
     font-size: clamp(6rem, 18vw, 12rem);
     color: var(--gold);

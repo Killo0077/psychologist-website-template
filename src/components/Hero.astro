@@ -1,5 +1,6 @@
 ---
 import { site } from "../content/site";
+import HeroArtwork from "./HeroArtwork.astro";
 ---
 
 <section class="hero">
@@ -27,10 +28,6 @@ import { site } from "../content/site";
             </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-            <div class="hero-orb">
-                <span>{site.brand.initials}</span>
-            </div>
-        </div>
+        <HeroArtwork />
     </div>
 </section>
