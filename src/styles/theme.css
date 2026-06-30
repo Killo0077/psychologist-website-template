@@ -123,3 +123,73 @@
     background: rgba(201, 166, 107, .08);
 
 }
+
+/* ===========================
+   HEADER
+=========================== */
+
+.site-header {
+
+    position: absolute;
+
+    inset-inline: 0;
+
+    top: 0;
+
+    z-index: 100;
+
+    padding: 2rem 0;
+
+}
+
+.header-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.logo-mark {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2rem;
+
+    color: var(--gold);
+
+}
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.logo-text strong {
+
+    color: var(--navy);
+
+}
+
+.logo-text span {
+
+    color: var(--text-muted);
+
+    font-size: .85rem;
+
+}

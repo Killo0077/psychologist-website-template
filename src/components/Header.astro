@@ -1,0 +1,23 @@
+---
+import { site } from "../content/site";
+---
+
+<header class="site-header">
+    <div class="container header-content">
+        <a href="/" class="logo">
+            <span class="logo-mark">
+                {site.brand.initials}
+            </span>
+
+            <div class="logo-text">
+                <strong>{site.brand.name}</strong>
+
+                <span>{site.brand.profession}</span>
+            </div>
+        </a>
+
+        <a href="#contact" class="primary-button">
+            {site.hero.primaryButton}
+        </a>
+    </div>
+</header>
