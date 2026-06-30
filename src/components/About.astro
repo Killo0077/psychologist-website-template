@@ -1,0 +1,29 @@
+---
+import { site } from "../content/site";
+---
+
+<section class="section section-light about">
+    <div class="container about-grid">
+        <div class="about-content">
+            <p class="section-label">
+                {site.about.label}
+            </p>
+
+            <h2 class="section-title">
+                {site.about.title}
+            </h2>
+
+            <p>{site.about.description}</p>
+
+            <p>{site.about.secondParagraph}</p>
+
+            <a href="#contact" class="primary-button"> Learn More </a>
+        </div>
+
+        <div class="about-image">
+            <div class="portrait-placeholder">
+                {site.brand.initials}
+            </div>
+        </div>
+    </div>
+</section>

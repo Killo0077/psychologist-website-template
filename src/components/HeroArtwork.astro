@@ -2,8 +2,11 @@
 import { site } from "../content/site";
 ---
 
+import {Image} from "astro:assets"; import {site} from "../content/site"; import logo
+from "../assets/images/branding/logo.png"; --- ---
+
 <div class="hero-visual" aria-hidden="true">
     <div class="hero-artwork">
-        <span>{site.brand.initials}</span>
+        <Image src={logo} alt="Victoria Howson logo" class="hero-logo" />
     </div>
 </div>

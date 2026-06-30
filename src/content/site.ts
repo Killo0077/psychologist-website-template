@@ -27,4 +27,14 @@ export const site = {
         phone: "+44 0000 000000",
         location: "United Kingdom",
     },
+
+    about: {
+        label: "About Victoria Howson",
+        title: "A calm, evidence-based space for understanding and change.",
+        description:
+            "Victoria Howson is a clinical psychologist supporting people through anxiety, emotional challenges and life transitions with compassion, clarity and evidence-based care.",
+        secondParagraph:
+            "Her approach combines professional expertise with a warm, human style, helping each person feel understood, supported and empowered.",
+    },
+
 };
