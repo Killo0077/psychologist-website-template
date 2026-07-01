@@ -5,22 +5,22 @@ import organizations from "../assets/images/organizations.png";
 export const supportAreas = [
     {
         tag: "Families",
-        title: "Family Support",
-        description: "Helping children, adolescents and families navigate emotional, behavioural and developmental challenges with compassionate, evidence-based care.",
+        title: "Individual Support",
+        description: "Educational Psychology Assessment, Therapeutic Intervention, Parent Consultation, Anxiety Support, Behaviour & Emotional Regulation.",
         image: family,
-        link: "#family",
+        link: "#individual",
     },
     {
         tag: "Schools",
         title: "School Support",
-        description: "Working collaboratively with schools to promote student wellbeing, resilience and inclusive learning through consultation, assessment and guidance.",
+        description: "Consultation, Assessment, Staff Training, Whole School Wellbeing, Bullying Prevention and Neurodiversity-Informed Practice.",
         image: school,
         link: "#schools",
     },
     {
         tag: "Organisations",
         title: "Organisation Support",
-        description: "Supporting organisations through psychological consultation, staff wellbeing initiatives, supervision and professional development.",
+        description: "Keynote Speaking, Workshops, Leadership Wellbeing, Psychological Safety and Professional Development.",
         image: organizations,
         link: "#organisations",
     },
