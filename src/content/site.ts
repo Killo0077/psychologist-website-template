@@ -29,7 +29,7 @@ export const site = {
     contact: {
         email: "hello@victoriahowson.com",
         phone: "+44 0000 000000",
-        location: "United Kingdom",
+        location: "Ireland",
     },
 
     about: {
