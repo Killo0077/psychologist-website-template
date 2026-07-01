@@ -2,41 +2,6 @@
 import { site } from "../content/site";
 ---
 
-<!-- ---
-import { Image } from "astro:assets";
-import { site } from "../content/site";
-import brain from "../assets/images/logo.png";
----
-
-<section class="section section-light about">
-    <div class="container section-grid">
-        <div class="about-content">
-            <p class="section-label">
-                {site.about.label}
-            </p>
-
-            <h2 class="section-title">
-                {site.about.title}
-            </h2>
-
-            <p>{site.about.description}</p>
-
-            <p>{site.about.secondParagraph}</p>
-
-            <a href="#contact" class="primary-button"> Learn More </a>
-        </div>
-
-        <div class="about-image">
-            <div class="about-image">
-                <Image
-                    src={brain}
-                    alt="Psychology illustration"
-                    class="about-brain"
-                />
-            </div>
-        </div>
-    </div>
-</section> -->
 <section class="section section-light about" id="about">
     <div class="container about-text-grid">
         <div class="about-intro">
@@ -51,12 +16,6 @@ import brain from "../assets/images/logo.png";
             <p>{site.about.description}</p>
 
             <p>{site.about.secondParagraph}</p>
-
-            <p>
-                Each session is shaped around the individual needs of the
-                person, creating a thoughtful space for reflection, emotional
-                growth and practical change.
-            </p>
         </div>
     </div>
 </section>
