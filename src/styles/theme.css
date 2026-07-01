@@ -607,6 +607,35 @@
 }
 
 
+/* ---------- RESOURCES ---------- */
+
+.resources {
+    background: var(--cream);
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.resources-content {
+    max-width: 620px;
+}
+
+.resources-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* ---------- FOOTER ---------- */
 
