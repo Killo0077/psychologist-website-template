@@ -1,0 +1,39 @@
+---
+import { site } from "../content/site";
+---
+
+<section class="section section-cream" id="qualifications">
+    <div class="container">
+        <p class="section-label">Qualifications & Professional Background</p>
+
+        <h2 class="section-title">
+            Professional qualifications and experience.
+        </h2>
+
+        <div class="qualifications-grid">
+            <div>
+                <h3>Education</h3>
+
+                <ul>
+                    {
+                        site.qualifications.education.map((item) => (
+                            <li>{item}</li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <div>
+                <h3>Professional Experience</h3>
+
+                <ul>
+                    {
+                        site.qualifications.experience.map((item) => (
+                            <li>{item}</li>
+                        ))
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
