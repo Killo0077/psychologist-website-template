@@ -22,6 +22,7 @@ export const site = {
         secondaryButton: "Learn More",
     },
 
+
     contact: {
         email: "hello@victoriahowson.com",
         phone: "+44 0000 000000",
@@ -39,5 +40,27 @@ Throughout my career I have worked across educational psychology, disability ser
 
 I believe behaviour is communication, relationships shape development, and every child deserves adults who feel confident, supported and empowered to help them flourish.`,
     },
+
+    qualifications: {
+        education: [
+            "Doctorate in Educational Psychology — University College Dublin (completion expected 2026)",
+            "MA in Applied Psychology — University College Cork",
+            "BA in Applied Psychology — University College Cork",
+            "Mindfulness Teacher Training — Irish Institute of Counselling & Psychotherapy (IICP)",
+        ],
+
+        experience: [
+            "Educational Psychology",
+            "Primary Care Psychology",
+            "Infant & Early Childhood Mental Health",
+            "Disability Services",
+            "Research",
+            "Charity & Community Psychology",
+            "School Consultation",
+            "Professional Training & Public Speaking",
+        ],
+    },
+
+
 
 };
