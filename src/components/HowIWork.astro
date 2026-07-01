@@ -1,0 +1,29 @@
+---
+import { site } from "../content/site";
+---
+
+<section class="section section-light" id="approach">
+    <div class="container">
+        <p class="section-label">How I Work</p>
+
+        <h2 class="section-title">
+            Integrating evidence-informed psychological approaches.
+        </h2>
+
+        <p class="section-intro">
+            Rather than following a single model, Victoria integrates
+            evidence-informed psychological approaches to meet the unique needs
+            of every child, family, school and organisation.
+        </p>
+
+        <div class="approach-grid">
+            {
+                site.approaches.map((approach) => (
+                    <div class="approach-card">
+                        <h3>{approach}</h3>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>

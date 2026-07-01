@@ -5,12 +5,15 @@ export const site = {
         title: "Victoria Howson | Clinical Psychologist",
         description:
             "Evidence-based psychological support for children, adolescents and families.",
+
     },
+
+
 
     brand: {
         name: "Victoria Howson",
         initials: "VH",
-        profession: "Clinical Psychologist",
+        profession: "Educational Psychologist",
     },
 
     hero: {
@@ -61,6 +64,22 @@ I believe behaviour is communication, relationships shape development, and every
         ],
     },
 
+    approaches: [
+        "Developmental Psychology",
+        "Educational Psychology",
+        "Attachment Theory",
+        "Polyvagal Theory",
+        "Interpersonal Neurobiology",
+        "Compassion Focused Therapy (CFT)",
+        "Acceptance and Commitment Therapy (ACT)",
+        "Cognitive Analytic Therapy (CAT)",
+        "Non-Violent Resistance (NVR)",
+        "Cognitive Behavioural Therapy (CBT)",
+        "Mindfulness-Based Approaches",
+        "Emotion Coaching",
+        "Trauma-Informed Practice",
+        "Neuroaffirming Practice",
+    ],
 
 
 };
