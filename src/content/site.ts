@@ -46,7 +46,7 @@ I believe behaviour is communication, relationships shape development, and every
             "Doctorate in Educational Psychology — University College Dublin (completion expected 2026)",
             "MA in Applied Psychology — University College Cork",
             "BA in Applied Psychology — University College Cork",
-            "Mindfulness Teacher Training — Irish Institute of Counselling & Psychotherapy (IICP)",
+            "Mindfulness — Irish Institute of Counselling & Psychotherapy (IICP)",
         ],
 
         experience: [
