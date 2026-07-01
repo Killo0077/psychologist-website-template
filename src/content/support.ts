@@ -4,9 +4,10 @@ import organizations from "../assets/images/organizations.png";
 
 export const supportAreas = [
     {
-        tag: "Families",
+        tag: "Individual Support",
         title: "Individual Support",
-        description: "Educational Psychology Assessment, Therapeutic Intervention, Parent Consultation, Anxiety Support, Behaviour & Emotional Regulation.",
+        description:
+            "Educational Psychology Assessment, Therapeutic Intervention, Parent Consultation, Anxiety Support, Behaviour & Emotional Regulation.",
         image: family,
         link: "#individual",
     },
